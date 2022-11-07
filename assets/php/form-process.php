@@ -5,7 +5,7 @@ $subject = $_POST["subject"];
 $department = $_POST["department"];
 $message = $_POST["message"];
  
-$EmailTo = "yourmail@antler.com";
+$EmailTo = "yourmail@GigaNode.com";
 $Subject = "New Message Received";
  
 // prepare email body text

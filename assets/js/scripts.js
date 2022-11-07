@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------
-Project: Antler - Hosting Provider & WHMCS Template
-Description: Antler Responsive Premium Template Designed for all web hosting providers
+Project: GigaNode - Hosting Provider & WHMCS Template
+Description: GigaNode Responsive Premium Template Designed for all web hosting providers
 Author: inebur (Rúben Rodrigues)
 Author URI: http://inebur.com/
 Author Envato: https://themeforest.net/user/inebur
@@ -75,7 +75,7 @@ function setCookie(name,value,days) {
     }
     return null;
   }
-  function antlerSettings({layout,color,background,font,header,textDirection,showSettings}){
+  function GigaNodeSettings({layout,color,background,font,header,textDirection,showSettings}){
     this.showSettings = showSettings || "hide";
     this.layout = this.showSettings === "show" ? getCookie("layout") || "wide" : layout || "wide" ;
     this.color = this.showSettings === "show" ? getCookie("color") || "pink" : color || "pink" ;
@@ -92,7 +92,7 @@ function setCookie(name,value,days) {
     this.manageSettings();
   }
   body = $('body');
-  antlerSettings.prototype.manageSettings = function(){
+  GigaNodeSettings.prototype.manageSettings = function(){
     switch(this.showSettings){
         case "hide":
             break;
@@ -104,7 +104,7 @@ function setCookie(name,value,days) {
         }
   }
 
-  antlerSettings.prototype.manageTextDirection = function(){
+  GigaNodeSettings.prototype.manageTextDirection = function(){
     switch(this.textDirection){
         case "ltr":
             //LOGIC
@@ -132,7 +132,7 @@ function setCookie(name,value,days) {
         }
   }
 
-  antlerSettings.prototype.manageHeader = function() {
+  GigaNodeSettings.prototype.manageHeader = function() {
     switch(this.header){
         case "static":
             body.attr("data-header","static");
@@ -149,7 +149,7 @@ function setCookie(name,value,days) {
     }
 }
 
-  antlerSettings.prototype.manageLayout = function() {
+  GigaNodeSettings.prototype.manageLayout = function() {
     switch(this.layout){
         case "wide":
             body.attr("data-layout","wide");
@@ -174,7 +174,7 @@ function setCookie(name,value,days) {
     }
   }
   
-  antlerSettings.prototype.manageColor = function() {
+  GigaNodeSettings.prototype.manageColor = function() {
     switch(this.color){
         case "pink":
             body.attr("data-color","pink");
@@ -199,7 +199,7 @@ function setCookie(name,value,days) {
     }
   }
 
-  antlerSettings.prototype.manageBackground = function() {
+  GigaNodeSettings.prototype.manageBackground = function() {
     switch(this.background){
         case "origin":
             body.attr("data-background","origin");
@@ -224,7 +224,7 @@ function setCookie(name,value,days) {
     }
 }
 
-antlerSettings.prototype.manageFont = function() {
+GigaNodeSettings.prototype.manageFont = function() {
     switch(this.font){
         case "opensans":
             body.attr("data-font","opensans");
@@ -959,7 +959,7 @@ function initSliderUI() {
                         ip: "2 IPs",
                         price: "99.09",
                         priceon: "8.26",
-                        orderlink: "http://inebur.com/whmcs/cart.php?a=add&pid=4&carttpl=antler"
+                        orderlink: "http://inebur.com/whmcs/cart.php?a=add&pid=4&carttpl=GigaNode"
                     },
                     VPS2: {
                         name: "Service B",
@@ -971,7 +971,7 @@ function initSliderUI() {
                         bandwith: "500GB",
                         price: "155.00",
                         priceon: "12.92",
-                        orderlink: "http://inebur.com/whmcs/cart.php?a=add&pid=5&carttpl=antler"
+                        orderlink: "http://inebur.com/whmcs/cart.php?a=add&pid=5&carttpl=GigaNode"
                     },
                     VPS3: {
                         name: "Service C",
@@ -983,7 +983,7 @@ function initSliderUI() {
                         bandwith: "2TB",
                         price: "299.99",
                         priceon: "25.00",
-                        orderlink: "http://inebur.com/whmcs/cart.php?a=add&pid=6&carttpl=antler"
+                        orderlink: "http://inebur.com/whmcs/cart.php?a=add&pid=6&carttpl=GigaNode"
                     },
                     VPS4: {
                         name: "Service D",
@@ -995,7 +995,7 @@ function initSliderUI() {
                         bandwith: "Unlimited",
                         price: "395.22",
                         priceon: "32.94",
-                        orderlink: "http://inebur.com/whmcs/cart.php?a=confproduct&i=3&carttpl=antler"
+                        orderlink: "http://inebur.com/whmcs/cart.php?a=confproduct&i=3&carttpl=GigaNode"
                     },
                     VPS5: {
                         name: "Service E",
@@ -1007,7 +1007,7 @@ function initSliderUI() {
                         bandwith: "Unlimited",
                         price: "545.00",
                         priceon: "45.42",
-                        orderlink: "http://inebur.com/whmcs/cart.php?a=confproduct&i=4&carttpl=antler"
+                        orderlink: "http://inebur.com/whmcs/cart.php?a=confproduct&i=4&carttpl=GigaNode"
                     }
                 };
                 return info;

@@ -9,4 +9,4 @@ var optionSettings = {
     textDirection:"ltr",
     showSettings:"hide",
 };
-new antlerSettings(optionSettings);
+new GigaNodeSettings(optionSettings);
